@@ -1,0 +1,149 @@
+   <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bulb.css">
+
+</head>
+
+<body>
+
+  <div>
+    <div class="wire"></div>
+    <div class="back"></div>
+    <div class="back0"></div>
+
+    <div id="blub" class="bulb"></div>
+
+    <div>
+      <div class="switch1" onclick="onclickYellow()">yellow</div>
+
+      <div class="switch12" onclick="clickoff()">OFF</div>
+    </div>
+
+
+
+  </div> 
+ <!-- -------------------------1---------- -->
+   <div>
+    <div class="wire1"></div>
+    <div class="back1"></div>
+    <div class="back12"></div>
+
+    <div id="blub1" class="bulb1"></div>
+
+    <div>
+      <div class="switch2" onclick="onclickpink()">pink</div>
+      <div class="switch21" onclick="clickoff1()">OFF</div>
+    </div>
+
+  </div>  
+<!-- -----------------------------2------------------------ -->
+  
+   <div>
+    <div class="wire2"></div>
+    <div class="back2"></div>
+    <div class="back21"></div>
+
+    <div id="blub2" class="bulb2"></div>
+
+    <div>
+      <div class="switch3" onclick="onclickorange()">orange</div>
+      <div class="switch31" onclick="clickoff2()">OFF</div>
+    </div>
+    
+  </div>  
+  <!-- -----------------------------3---------------------------  -->
+
+   <script>
+
+    let onclickYellow = () => {
+      document.getElementById('blub').style = 'background-color:yellow;box-shadow: 0px 0px 50px 20px yellow'
+
+    }
+    let clickoff = () => {
+      document.getElementById('blub').style = 'background-color:rgb(121, 103, 80)'
+
+    }
+    let onclickpink = () => {
+      document.getElementById('blub1').style = 'background-color:pink;box-shadow: 0px 0px 50px 20px pink'
+
+    }
+  
+    let clickoff1 = () => {
+      document.getElementById('blub1').style = 'background-color:rgb(121, 103, 80)'
+
+    }
+    let onclickorange = () => {
+      document.getElementById('blub2').style = 'background-color:orange;box-shadow: 0px 0px 50px 20px orange'
+
+    }
+  
+    let clickoff2 = () => {
+      document.getElementById('blub2').style = 'background-color:rgb(121, 103, 80)'
+
+    }
+    
+  </script>
+</body>
+
+</html>  
+ 
+
+<!--  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            border-radius: 50%;
+            background-image: repeating-conic-gradient(red, yellow, green, blue, white 10%);
+            animation-name: anima;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes anima {
+             0% {
+                transform: rotate(0deg);
+            } 
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main" onclick="clikHandle()">
+
+    </div>
+
+    <script>
+        let a = 0;
+        data = document.querySelector(".main")
+        const clikHandle = () => {
+            console.log(!a);
+            if (!a) {
+                data.style = "animation-duration: 1s;"
+                a = 1
+            } else {
+                data.style = "animation-duration: unset"
+                a = 0
+            }
+        }
+    </script>
+</body>
+
+</html>   -->
